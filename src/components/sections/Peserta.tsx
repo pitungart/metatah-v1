@@ -12,7 +12,7 @@ export default function Peserta() {
         <Eyebrow>Sang Meraga Suci</Eyebrow>
       </Reveal>
       <Reveal as="h2" className="font-display text-[32px]">
-        Peserta Metatah
+        Sane Metatah
       </Reveal>
       <Reveal>
         <Rule />

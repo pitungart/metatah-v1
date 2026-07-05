@@ -20,7 +20,7 @@ export const CONFIG = {
     order: "Anak pertama dari pasangan",
     father: "I Putu Utara Kanda",
     mother: "Ni Komang Martini",
-    address: "Br. Dinas Paungssari, Desa Tigawasa, Buleleng, Bali",
+    address: "Br. Dinas Pangussari, Desa Tigawasa, Buleleng, Bali",
     // PLACEHOLDER: FOTO-ANAK — isi path foto (mis. "/photos/anak.jpg"), kosong = kotak placeholder
     photo: "/photos/foto-anak.png",
   },
@@ -30,7 +30,7 @@ export const CONFIG = {
     day: "Minggu, 12 Juli 2026",
     time: "11.00 WITA — Selesai",
     place: "Kediaman Keluarga",
-    area: "Br. Dinas Paungssari, Desa Tigawasa, Buleleng, Bali",
+    area: "Br. Dinas Pangussari, Desa Tigawasa, Buleleng, Bali",
     mapUrl: "https://maps.app.goo.gl/1pYshYYbBXGCv9YT8",
     mapEmbedUrl:
       "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3948.931825801057!2d115.0228333!3d-8.2096111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMTInMzQuNiJTIDExNcKwMDEnMjIuMiJF!5e0!3m2!1sid!2sid!4v1783226035621!5m2!1sid!2sid",
