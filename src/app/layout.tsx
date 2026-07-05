@@ -3,6 +3,7 @@ import { CONFIG } from "@/config";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://metatah-v1.vercel.app"),
   title: `Undangan Metatah | ${CONFIG.title}`,
   description:
     "Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir memberikan doa restu pada Upacara Metatah putra kami.",
@@ -10,6 +11,20 @@ export const metadata: Metadata = {
     title: `Undangan Metatah | ${CONFIG.title}`,
     description: `Undangan Upacara Manusa Yadnya Metatah (Mepandes) — ${CONFIG.heroDate}`,
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 800,
+        height: 1200,
+        alt: `Undangan Metatah ${CONFIG.title}`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Undangan Metatah | ${CONFIG.title}`,
+    description: `Undangan Upacara Manusa Yadnya Metatah (Mepandes) — ${CONFIG.heroDate}`,
+    images: ["/og-image.jpg"],
   },
 };
 
