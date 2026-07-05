@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 800,
-        height: 1200,
+        url: "/og-image.png",
+        width: 1022,
+        height: 1019,
         alt: `Undangan Metatah ${CONFIG.title}`,
       },
     ],
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Undangan Metatah | ${CONFIG.title}`,
     description: `Undangan Upacara Manusa Yadnya Metatah (Mepandes) — ${CONFIG.heroDate}`,
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
 };
 
