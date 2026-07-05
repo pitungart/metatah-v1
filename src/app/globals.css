@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palet "chikurin" — wairo Jepang:
+     susutake #6f4b3e · matsuba #475950 · miru #716246 · torinoko #f0e2c5 */
+  --color-ink: #1a1814;
+  --color-ink-soft: #4a443a;
+  --color-bark: #6f4b3e; /* susutake — warna primer: tombol & section gelap */
+  --color-bark-soft: #5d3f34;
+  --color-pine: #475950; /* matsuba — aksen detail (medallion, garis) */
+  --color-olive: #716246; /* miru — pengganti peran "gold/prada" */
+  --color-cream: #f3efe6; /* background terang */
+  --color-cream-deep: #f0e2c5; /* torinoko — section selang-seling & aksen di bg gelap */
+
+  --font-display: "Cormorant Garamond", serif;
+  --font-names: "Cormorant Garamond", serif;
+  --font-script: "Great Vibes", cursive;
+  --font-body: "Work Sans", sans-serif;
+  --font-label: "Work Sans", sans-serif;
+
+  --shadow-soft: 0 18px 40px -18px rgba(26, 24, 20, 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Cormorant Garamond tampil anggun di bobot 600 untuk judul */
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+/* ---------- reveal on scroll ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- tile bg-pattern.png di section terang ---------- */
+.bg-tile {
+  background-image: url("/assets/bg-pattern.png");
+  background-size: 420px auto;
+  background-repeat: repeat;
+}
+
+/* ---------- garis rule dengan diamond ---------- */
+.rule {
+  width: 64px;
+  height: 1px;
+  background: var(--color-olive);
+  margin: 18px auto;
+  position: relative;
+}
+.rule::before,
+.rule::after {
+  content: "";
+  position: absolute;
+  top: -2.5px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--color-olive);
+  transform: rotate(45deg);
+  background: var(--color-cream);
+}
+.rule::before {
+  left: -12px;
+}
+.rule::after {
+  right: -12px;
+}
+.rule--dark::before,
+.rule--dark::after {
+  background: var(--color-bark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
